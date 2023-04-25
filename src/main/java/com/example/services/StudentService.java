@@ -13,21 +13,21 @@ public class StudentService {
 
     @Autowired
     StudentRepositoryMongo studentRepositoryMongo;
-    @Autowired
-    RedisTemplate<String, RedisStudent> redisTemplate;
-
-    public void createStudent(MongoStudent student) {
-        studentRepositoryMongo.save(student);
-    }
-
-    public MongoStudent getStudentById(String id) {
-        RedisStudent redisStudent = redisTemplate.opsForValue().get(id);
-        if (redisStudent == null) {
-            System.out.println("mongo call");
-            MongoStudent mongoStudent = studentRepositoryMongo.findById(id).get();
-            redisTemplate.opsForValue().set(id, new RedisStudent(mongoStudent));
-            return mongoStudent;
-        }
-        return new MongoStudent(redisStudent);
-    }
+//    @Autowired
+//    RedisTemplate<String, RedisStudent> redisTemplate;
+//
+//    public void createStudent(MongoStudent student) {
+//        studentRepositoryMongo.save(student);
+//    }
+//
+//    public MongoStudent getStudentById(String id) {
+//        RedisStudent redisStudent = redisTemplate.opsForValue().get(id);
+//        if (redisStudent == null) {
+//            System.out.println("mongo call");
+//            MongoStudent mongoStudent = studentRepositoryMongo.findById(id).get();
+//            redisTemplate.opsForValue().set(id, new RedisStudent(mongoStudent));
+//            return mongoStudent;
+//        }
+//        return new MongoStudent(redisStudent);
+//    }
 }

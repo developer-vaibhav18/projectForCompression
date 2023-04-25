@@ -1,5 +1,7 @@
 package com.example.config;
 
+import com.example.beans.mongo.MongoRepairOrder;
+import com.example.beans.redis.RedisRepairOrder;
 import com.example.beans.redis.RedisStudent;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,8 +16,8 @@ public class AppConfig {
     }
 
     @Bean
-    public RedisTemplate<String, RedisStudent> redisTemplate() {
-        RedisTemplate<String, RedisStudent> template = new RedisTemplate<>();
+    public RedisTemplate<String, byte[]> redisTemplate() {
+        RedisTemplate<String, byte[]> template = new RedisTemplate<>();
         template.setConnectionFactory(jedisConnectionFactory());
         return template;
     }
