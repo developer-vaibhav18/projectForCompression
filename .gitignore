@@ -17,7 +17,7 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### IntelliJ IDEA ###
+### IntegerelliJ IDEA ###
 .idea
 *.iws
 *.iml

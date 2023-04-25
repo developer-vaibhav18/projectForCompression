@@ -24,5 +24,5 @@ public class MongoStudent {
     private String id;
     private String name;
     private Gender gender;
-    private int grade;
+    private Integer grade;
 }

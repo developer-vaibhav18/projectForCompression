@@ -47,11 +47,11 @@ public class MongoRepairOrder {
         public Object periodOfResidence;
         public Object mortageValue;
         public Object routeNumber;
-        public int addressType;
-        public int startDate;
-        public int endDate;
+        public Integer addressType;
+        public Integer startDate;
+        public Integer endDate;
         @JsonProperty("default")
-        public boolean mydefault;
+        public Boolean mydefault;
         public Object currentAddress;
     }
 
@@ -69,16 +69,16 @@ public class MongoRepairOrder {
         public Object periodOfResidence;
         public Object mortageValue;
         public Object routeNumber;
-        public int addressType;
-        public int startDate;
-        public int endDate;
+        public Integer addressType;
+        public Integer startDate;
+        public Integer endDate;
         @JsonProperty("default")
-        public boolean mydefault;
+        public Boolean mydefault;
         public Object currentAddress;
     }
 
     public class Amount{
-        public int amount;
+        public Integer amount;
         public String currency;
     }
 
@@ -111,30 +111,30 @@ public class MongoRepairOrder {
         public Object note;
         public Object customerCommentMetaData;
         public String customerNumber;
-        public boolean taxExempted;
+        public Boolean taxExempted;
         public Object reasonForTaxExemption;
         public Object taxExemptNumber;
         public String customerType;
-        public int customerTypeInteger;
+        public Integer customerTypeInteger;
         public String customerDetailType;
         public String primaryPhone;
         public ArrayList<Address> addresses;
         public Address address;
         public ArrayList<Phone> phones;
         public String preferredCommunicationMode;
-        public int preferredContactType;
-        public boolean optInText;
-        public boolean optInEmail;
+        public Integer preferredContactType;
+        public Boolean optInText;
+        public Boolean optInEmail;
         public Object originalCustomerInfo;
         public Object customerTaxOverride;
-        public boolean deleted;
+        public Boolean deleted;
         public Object deleteReason;
-        public int deleteTimestamp;
+        public Integer deleteTimestamp;
     }
 
     public class CostPricingDetail{
         public String pricingType;
-        public int flatPrice;
+        public Integer flatPrice;
         public Object basePrice;
         public Object percentage;
         public Object minAmount;
@@ -142,64 +142,64 @@ public class MongoRepairOrder {
     }
 
     public class CpAmounts{
-        public int closedTime;
+        public Integer closedTime;
         public Object closedBy;
-        public int amount;
-        public int estimateAmount;
-        public int laborAmount;
-        public int partsAmount;
-        public int partCoreAmount;
-        public int partCoreReturnAmount;
-        public int laborCostAmount;
-        public int partCostAmount;
-        public int adjustedPartCostAmount;
-        public int adjustedLaborCostAmount;
-        public int initialLaborCostAmount;
-        public int serviceTotalAmount;
-        public int partsTotalAmount;
-        public int serviceFeeAmount;
-        public int serviceFeeCostAmount;
-        public int partFeeAmount;
-        public int partFeeCostAmount;
-        public int serviceCouponsAmount;
-        public int partCouponsAmount;
-        public int deductibleAmount;
-        public int serviceTax;
-        public int serviceFeeTax;
-        public int partTax;
-        public int partFeeTax;
-        public int subletTax;
-        public int deductibleTax;
-        public int thirdPartyTax;
-        public int subletLaborTax;
-        public int subletPartTax;
-        public int flatSplitAmount;
-        public int flatSplitAmountTax;
-        public int subletSaleAmount;
-        public int subletLaborSaleAmount;
-        public int subletPartSaleAmount;
-        public int subletCostAmount;
-        public int subletLaborCostAmount;
-        public int subletPartCostAmount;
-        public int serviceCouponsAmountForGrossCalculation;
-        public int partCouponsAmountForGrossCalculation;
-        public int roCouponsAmount;
-        public int roCouponTax;
-        public int roFeeAmount;
-        public int roFeeCostAmount;
-        public int roFeeTax;
-        public int roFeeTaxableAmount;
+        public Integer amount;
+        public Integer estimateAmount;
+        public Integer laborAmount;
+        public Integer partsAmount;
+        public Integer partCoreAmount;
+        public Integer partCoreReturnAmount;
+        public Integer laborCostAmount;
+        public Integer partCostAmount;
+        public Integer adjustedPartCostAmount;
+        public Integer adjustedLaborCostAmount;
+        public Integer initialLaborCostAmount;
+        public Integer serviceTotalAmount;
+        public Integer partsTotalAmount;
+        public Integer serviceFeeAmount;
+        public Integer serviceFeeCostAmount;
+        public Integer partFeeAmount;
+        public Integer partFeeCostAmount;
+        public Integer serviceCouponsAmount;
+        public Integer partCouponsAmount;
+        public Integer deductibleAmount;
+        public Integer serviceTax;
+        public Integer serviceFeeTax;
+        public Integer partTax;
+        public Integer partFeeTax;
+        public Integer subletTax;
+        public Integer deductibleTax;
+        public Integer thirdPartyTax;
+        public Integer subletLaborTax;
+        public Integer subletPartTax;
+        public Integer flatSplitAmount;
+        public Integer flatSplitAmountTax;
+        public Integer subletSaleAmount;
+        public Integer subletLaborSaleAmount;
+        public Integer subletPartSaleAmount;
+        public Integer subletCostAmount;
+        public Integer subletLaborCostAmount;
+        public Integer subletPartCostAmount;
+        public Integer serviceCouponsAmountForGrossCalculation;
+        public Integer partCouponsAmountForGrossCalculation;
+        public Integer roCouponsAmount;
+        public Integer roCouponTax;
+        public Integer roFeeAmount;
+        public Integer roFeeCostAmount;
+        public Integer roFeeTax;
+        public Integer roFeeTaxableAmount;
         public ArrayList<Object> paySplitShares;
-        public int totalBillingTimeInSeconds;
-        public int totalDiscount;
-        public int residueTax;
-        public int totalNonSplitItemsTax;
-        public int preTaxTotalWithoutCoupons;
-        public int preTaxCostTotalWithoutCoupons;
-        public int totalFees;
-        public int preTaxTotal;
-        public int postTaxTotal;
-        public int totalTax;
+        public Integer totalBillingTimeInSeconds;
+        public Integer totalDiscount;
+        public Integer residueTax;
+        public Integer totalNonSplitItemsTax;
+        public Integer preTaxTotalWithoutCoupons;
+        public Integer preTaxCostTotalWithoutCoupons;
+        public Integer totalFees;
+        public Integer preTaxTotal;
+        public Integer postTaxTotal;
+        public Integer totalTax;
     }
 
     public class CustomerInfo{
@@ -213,25 +213,25 @@ public class MongoRepairOrder {
         public Object note;
         public Object customerCommentMetaData;
         public String customerNumber;
-        public boolean taxExempted;
+        public Boolean taxExempted;
         public Object reasonForTaxExemption;
         public Object taxExemptNumber;
         public String customerType;
-        public int customerTypeInteger;
+        public Integer customerTypeInteger;
         public String customerDetailType;
         public String primaryPhone;
         public ArrayList<Address> addresses;
         public Address address;
         public ArrayList<Phone> phones;
         public String preferredCommunicationMode;
-        public int preferredContactType;
-        public boolean optInText;
-        public boolean optInEmail;
+        public Integer preferredContactType;
+        public Boolean optInText;
+        public Boolean optInEmail;
         public Object originalCustomerInfo;
         public Object customerTaxOverride;
-        public boolean deleted;
+        public Boolean deleted;
         public Object deleteReason;
-        public int deleteTimestamp;
+        public Integer deleteTimestamp;
     }
 
     public class DealerConfigDetail{
@@ -241,7 +241,7 @@ public class MongoRepairOrder {
         public String dealerId;
         public String tenantId;
         public String siteId;
-        public long createdTime;
+        public Long createdTime;
     }
 
     public class DropOffCustomerInfo{
@@ -255,31 +255,31 @@ public class MongoRepairOrder {
         public Object note;
         public Object customerCommentMetaData;
         public String customerNumber;
-        public boolean taxExempted;
+        public Boolean taxExempted;
         public Object reasonForTaxExemption;
         public Object taxExemptNumber;
         public String customerType;
-        public int customerTypeInteger;
+        public Integer customerTypeInteger;
         public String customerDetailType;
         public String primaryPhone;
         public ArrayList<Address> addresses;
         public Address address;
         public ArrayList<Phone> phones;
         public String preferredCommunicationMode;
-        public int preferredContactType;
-        public boolean optInText;
-        public boolean optInEmail;
+        public Integer preferredContactType;
+        public Boolean optInText;
+        public Boolean optInEmail;
         public Object originalCustomerInfo;
         public Object customerTaxOverride;
-        public boolean deleted;
+        public Boolean deleted;
         public Object deleteReason;
-        public int deleteTimestamp;
+        public Integer deleteTimestamp;
     }
 
     public class Estimate{
-        public int revisionNumber;
-        public int pdfVersion;
-        public long revisedTime;
+        public Integer revisionNumber;
+        public Integer pdfVersion;
+        public Long revisedTime;
         public Object comment;
         public ArrayList<String> jobIds;
         public String revisedBy;
@@ -304,16 +304,16 @@ public class MongoRepairOrder {
         public ArrayList<Object> excludeServiceTypeIds;
         public String costCenterSplitType;
         public Object costCenters;
-        public boolean costCentreOverridden;
+        public Boolean costCentreOverridden;
         public Object linkedOperationId;
         public ArrayList<TaxConfig> taxConfigs;
         public String pricingType;
-        public double flatPrice;
-        public int percentage;
-        public boolean minMaxLimits;
-        public double minAmount;
-        public double maxAmount;
-        public boolean overridden;
+        public Double flatPrice;
+        public Integer percentage;
+        public Boolean minMaxLimits;
+        public Double minAmount;
+        public Double maxAmount;
+        public Boolean overridden;
         public Object criteria;
         public String pricingMethod;
         public Object gridConfigId;
@@ -327,9 +327,9 @@ public class MongoRepairOrder {
         public String feeCode;
         public String levelId;
         public String levelType;
-        public int feeAmount;
-        public int feeCostAmount;
-        public boolean taxable;
+        public Integer feeAmount;
+        public Integer feeCostAmount;
+        public Boolean taxable;
         public ArrayList<TaxConfig> taxConfigs;
         public String payType;
         public String type;
@@ -340,40 +340,40 @@ public class MongoRepairOrder {
         public ArrayList<Object> insurances;
         public Object ipAmounts;
         public Object wpAmounts;
-        public int totalInsuranceAmount;
-        public int totalDeductible;
-        public int cpAmountFromWarrantySplit;
-        public int cpTaxFromWarrantySplit;
-        public int cpAmountFromInternalSplit;
-        public int cpTaxFromInternalSplit;
+        public Integer totalInsuranceAmount;
+        public Integer totalDeductible;
+        public Integer cpAmountFromWarrantySplit;
+        public Integer cpTaxFromWarrantySplit;
+        public Integer cpAmountFromInternalSplit;
+        public Integer cpTaxFromInternalSplit;
         public ArrayList<Object> couponsResult;
         public ArrayList<FeeCalculationResult> feeCalculationResults;
         public ArrayList<TaxCalculationResult> taxCalculationResults;
         public ArrayList<TaxCodeTaxAmount> taxCodeTaxAmounts;
-        public int insurancePayableAmount;
-        public int insuranceApprovedAmount;
-        public int totalLaborAmount;
-        public int totalBillingTimeInSeconds;
-        public int totalCpAmount;
-        public int totalWpAmount;
-        public int totalIpAmount;
-        public int totalAmount;
+        public Integer insurancePayableAmount;
+        public Integer insuranceApprovedAmount;
+        public Integer totalLaborAmount;
+        public Integer totalBillingTimeInSeconds;
+        public Integer totalCpAmount;
+        public Integer totalWpAmount;
+        public Integer totalIpAmount;
+        public Integer totalAmount;
     }
 
     public class Phone{
-        public int phoneType;
+        public Integer phoneType;
         public String number;
         public Object countryCode;
         public Object extension;
-        public boolean isPrimary;
-        public boolean optOutOfMarketingCalls;
+        public Boolean isPrimary;
+        public Boolean optOutOfMarketingCalls;
     }
 
 
 
     public class RoActivityTechWorkInfo{
         public String roTechWorkStatus;
-        public long lastActivityTechTime;
+        public Long lastActivityTechTime;
     }
 
     public class Root{
@@ -382,9 +382,9 @@ public class MongoRepairOrder {
 
     public class SalePricingDetail{
         public String pricingType;
-        public int flatPrice;
+        public Integer flatPrice;
         public Object basePrice;
-        public int percentage;
+        public Integer percentage;
         public Object minAmount;
         public Object maxAmount;
     }
@@ -399,28 +399,28 @@ public class MongoRepairOrder {
     }
 
     public class TaxableAmounts{
-        public int nonTaxableLaborAmount;
-        public int taxableLaborAmount;
-        public int nonTaxablePartsAmount;
-        public int taxablePartsAmount;
-        public int nonTaxableSubletSaleAmount;
-        public int taxableSubletSaleAmount;
-        public int nonTaxableSubletLaborSaleAmount;
-        public int taxableSubletLaborSaleAmount;
-        public int nonTaxableSubletPartSaleAmount;
-        public int taxableSubletPartSaleAmount;
-        public int nonTaxableServiceFeeAmount;
-        public int taxableServiceFeeAmount;
-        public int nonTaxablePartFeeAmount;
-        public int taxablePartFeeAmount;
-        public int taxableDeductibleAmount;
-        public int nonTaxableDeductibleAmount;
-        public int taxableThirdPartyAmount;
-        public int nonTaxableThirdPartyAmount;
-        public int taxableFlatSplitAmount;
-        public int nonTaxableFlatSplitAmount;
-        public int nonTaxableServiceCouponsAmount;
-        public int nonTaxablePartCouponsAmount;
+        public Integer nonTaxableLaborAmount;
+        public Integer taxableLaborAmount;
+        public Integer nonTaxablePartsAmount;
+        public Integer taxablePartsAmount;
+        public Integer nonTaxableSubletSaleAmount;
+        public Integer taxableSubletSaleAmount;
+        public Integer nonTaxableSubletLaborSaleAmount;
+        public Integer taxableSubletLaborSaleAmount;
+        public Integer nonTaxableSubletPartSaleAmount;
+        public Integer taxableSubletPartSaleAmount;
+        public Integer nonTaxableServiceFeeAmount;
+        public Integer taxableServiceFeeAmount;
+        public Integer nonTaxablePartFeeAmount;
+        public Integer taxablePartFeeAmount;
+        public Integer taxableDeductibleAmount;
+        public Integer nonTaxableDeductibleAmount;
+        public Integer taxableThirdPartyAmount;
+        public Integer nonTaxableThirdPartyAmount;
+        public Integer taxableFlatSplitAmount;
+        public Integer nonTaxableFlatSplitAmount;
+        public Integer nonTaxableServiceCouponsAmount;
+        public Integer nonTaxablePartCouponsAmount;
         public String levelId;
         public String taxLevel;
         public String taxType;
@@ -428,37 +428,37 @@ public class MongoRepairOrder {
         public Object preTaxSplit;
         public String payType;
         public Object taxCode;
-        public boolean laborTaxable;
-        public boolean partsTaxable;
-        public boolean subletLaborTaxable;
-        public boolean subletPartTaxable;
-        public boolean subletTaxable;
-        public boolean saleTaxableForSplitJob;
-        public boolean coreTaxable;
-        public boolean coreReturnTaxable;
-        public int totalTaxableAmount;
-        public int totalNonTaxableAmount;
+        public Boolean laborTaxable;
+        public Boolean partsTaxable;
+        public Boolean subletLaborTaxable;
+        public Boolean subletPartTaxable;
+        public Boolean subletTaxable;
+        public Boolean saleTaxableForSplitJob;
+        public Boolean coreTaxable;
+        public Boolean coreReturnTaxable;
+        public Integer totalTaxableAmount;
+        public Integer totalNonTaxableAmount;
     }
 
     public class TaxCalculationResult{
         public TaxableAmounts taxableAmounts;
-        public int laborOnlyTax;
-        public int partOnlyTax;
-        public int serviceFeeTax;
-        public int partFeeTax;
-        public int feeTax;
-        public int partTax;
-        public int serviceTax;
-        public int deductibleTax;
-        public int thirdPartyTax;
-        public int flatSplitTax;
-        public int subletTax;
-        public int subletLaborTax;
-        public int subletPartTax;
-        public int residueTax;
-        public int totalNonSplitItemsTax;
-        public int totalComputedTax;
-        public int customerPayableTax;
+        public Integer laborOnlyTax;
+        public Integer partOnlyTax;
+        public Integer serviceFeeTax;
+        public Integer partFeeTax;
+        public Integer feeTax;
+        public Integer partTax;
+        public Integer serviceTax;
+        public Integer deductibleTax;
+        public Integer thirdPartyTax;
+        public Integer flatSplitTax;
+        public Integer subletTax;
+        public Integer subletLaborTax;
+        public Integer subletPartTax;
+        public Integer residueTax;
+        public Integer totalNonSplitItemsTax;
+        public Integer totalComputedTax;
+        public Integer customerPayableTax;
         public String taxLevel;
         public String levelId;
         public String taxType;
@@ -476,30 +476,30 @@ public class MongoRepairOrder {
         public String payType;
         public Object harmonized;
         public String taxCategory;
-        public int laborAmount;
-        public int feeAmount;
-        public int subletLaborAmount;
-        public int subletPartAmount;
-        public int partAmount;
-        public int partFeeAmount;
-        public int deductibleAmount;
-        public int thirdPartyAmount;
-        public int flatSplitAmount;
-        public int totalAmount;
-        public int nonSplitAmount;
-        public int nonTaxableServiceCouponsAmount;
-        public int nonTaxablePartCouponsAmount;
-        public int laborTax;
-        public int feeTax;
-        public int subletLaborTax;
-        public int subletPartTax;
-        public int partTax;
-        public int partFeeTax;
-        public int deductibleTax;
-        public int thirdPartyTax;
-        public int flatSplitAmountTax;
-        public int nonSplitAmountTax;
-        public int totalTax;
+        public Integer laborAmount;
+        public Integer feeAmount;
+        public Integer subletLaborAmount;
+        public Integer subletPartAmount;
+        public Integer partAmount;
+        public Integer partFeeAmount;
+        public Integer deductibleAmount;
+        public Integer thirdPartyAmount;
+        public Integer flatSplitAmount;
+        public Integer totalAmount;
+        public Integer nonSplitAmount;
+        public Integer nonTaxableServiceCouponsAmount;
+        public Integer nonTaxablePartCouponsAmount;
+        public Integer laborTax;
+        public Integer feeTax;
+        public Integer subletLaborTax;
+        public Integer subletPartTax;
+        public Integer partTax;
+        public Integer partFeeTax;
+        public Integer deductibleTax;
+        public Integer thirdPartyTax;
+        public Integer flatSplitAmountTax;
+        public Integer nonSplitAmountTax;
+        public Integer totalTax;
         public Object subCodeAmounts;
         public Object preTaxSplit;
     }
@@ -507,32 +507,32 @@ public class MongoRepairOrder {
     public class TaxConfig{
         public String payType;
         public String taxRegimeType;
-        public boolean taxable;
+        public Boolean taxable;
     }
 
     public class TaxConfigDetails{
         public ArrayList<TaxLabelConfig> taxLabelConfigs;
-        public boolean unifyTaxes;
+        public Boolean unifyTaxes;
     }
 
     public class TaxLabelConfig{
         public String label;
         public String type;
-        public int percentage;
+        public Integer percentage;
     }
 
     public class TotalCustomerPayableTax{
-        public int amount;
+        public Integer amount;
         public String currency;
     }
 
     public class TotalPrepaidAmount{
-        public int amount;
+        public Integer amount;
         public String currency;
     }
 
     public class TotalTax{
-        public int amount;
+        public Integer amount;
         public String currency;
     }
 
@@ -545,8 +545,8 @@ public class MongoRepairOrder {
         public String model;
         public Object displayModel;
         public Object rfId;
-        public int mileageIn;
-        public int mileageOut;
+        public Integer mileageIn;
+        public Integer mileageOut;
         public Object color;
         public Object licensePlate;
         public Object fleetNo;
@@ -563,8 +563,8 @@ public class MongoRepairOrder {
         public String status;
         public Object vehicleType;
         public Object inventoryVehicleId;
-        public boolean inventoryVehicle;
-        public long inServiceDate;
+        public Boolean inventoryVehicle;
+        public Long inServiceDate;
         public String baseVehicleId;
         public String trimId;
         public String engineBaseId;
@@ -575,7 +575,7 @@ public class MongoRepairOrder {
         public String fuelTypeId;
         public String fuelDeliveryTypeId;
         public String bodyNumDoorsId;
-        public int styleId;
+        public Integer styleId;
         public String fuelType;
         public String fuelDeliveryType;
         public String engineSize;
@@ -588,8 +588,8 @@ public class MongoRepairOrder {
         public Object rank;
         public Object chassisNo;
         public Object serialNo;
-        public int engineHoursIn;
-        public int engineHoursOut;
+        public Integer engineHoursIn;
+        public Integer engineHoursOut;
         public Object type;
         public Object location;
         public Object locationType;
@@ -598,7 +598,7 @@ public class MongoRepairOrder {
         @JsonProperty("VIN")
         public String vIN;
         public String vin;
-        public boolean isCustomVehicle;
+        public Boolean isCustomVehicle;
     }
 
     public String id;
@@ -608,7 +608,7 @@ public class MongoRepairOrder {
     public String dealerId;
     public String siteId;
     public String locale;
-    public long statusUpdatedTime;
+    public Long statusUpdatedTime;
     public Object previousStatus;
     public String status;
     public Object partStatus;
@@ -618,22 +618,22 @@ public class MongoRepairOrder {
     public String customerId;
     public String vehicleId;
     public Object dealerConfigId;
-    public int jobCount;
-    public int activeJobCount;
-    public int voidedJobCount;
-    public int declinedJobCount;
-    public int holdJobCount;
+    public Integer jobCount;
+    public Integer activeJobCount;
+    public Integer voidedJobCount;
+    public Integer declinedJobCount;
+    public Integer holdJobCount;
     public Object serviceAdvisorId;
     public String teamId;
     public Object customerComments;
     public Object customerCommentMetaData;
     public String externalSource;
-    public boolean migrated;
+    public Boolean migrated;
     public Object externalNo;
     public Object createdByUserId;
-    public long createdTime;
-    public long modifiedTime;
-    public long systemModifiedTime;
+    public Long createdTime;
+    public Long modifiedTime;
+    public Long systemModifiedTime;
     public String lastUpdatedByUserId;
     public Object coupons;
     public Object jobSummaries;
@@ -646,22 +646,22 @@ public class MongoRepairOrder {
     public Object dealerShipCode;
     public Object location;
     public String userId;
-    public long userModifiedTime;
-    public long createdDateTime;
-    public long universalModifiedTime;
+    public Long userModifiedTime;
+    public Long createdDateTime;
+    public Long universalModifiedTime;
     public Object closedTime;
     public Object handOverTime;
     public Object closedBy;
-    public boolean deleted;
+    public Boolean deleted;
     public String roNo;
-    public boolean customRoNoUsed;
+    public Boolean customRoNoUsed;
     public String tagNo;
     public String source;
     public String subType;
     public Object customerGroupId;
     public String checkinMedium;
     public String flagId;
-    public long roFlagLastUpdatedTime;
+    public Long roFlagLastUpdatedTime;
     public String stockId;
     public String serviceVehicleId;
     public String inventoryVehicleId;
@@ -669,14 +669,14 @@ public class MongoRepairOrder {
     public String primaryAdvisorId;
     public ArrayList<String> allAdvisorIds;
     public ArrayList<String> jobServiceAdvisorIds;
-    public long promiseTime;
+    public Long promiseTime;
     public Object computedPromiseTime;
-    public boolean promiseTimeLocked;
-    public long checkinTime;
+    public Boolean promiseTimeLocked;
+    public Long checkinTime;
     public String recommendationApprovalStatus;
     public String jobWorkStatus;
     public Object roLevelSorStatus;
-    public boolean invoicedOnce;
+    public Boolean invoicedOnce;
     public String transportType;
     public String transportationId;
     public Object appointmentId;
@@ -685,13 +685,13 @@ public class MongoRepairOrder {
     public Object quoteId;
     public Object quoteNo;
     public Estimate estimate;
-    public boolean comeback;
+    public Boolean comeback;
     public Object parentRoId;
-    public int nonVoidedJobCount;
-    public int recommendationCount;
-    public int nonVoidedRecommendationCount;
-    public int warrantyClaimCount;
-    public boolean hold;
+    public Integer nonVoidedJobCount;
+    public Integer recommendationCount;
+    public Integer nonVoidedRecommendationCount;
+    public Integer warrantyClaimCount;
+    public Boolean hold;
     public AdditionalDetail additionalDetail;
     public Object inspection;
     public Object damages;
@@ -719,14 +719,14 @@ public class MongoRepairOrder {
     public Object paySplitTotals;
     public PaySplitTotalsV3 paySplitTotalsV3;
     public Object migratedRoTotals;
-    public int totalBillingTimeInSeconds;
+    public Integer totalBillingTimeInSeconds;
     public ArrayList<Object> assignedTechIds;
     public ArrayList<Object> assignedTechDetails;
     public ArrayList<String> tags;
     public ArrayList<TagDetail> tagDetails;
     public String mediaLink;
     public Object keyLoungeDetails;
-    public boolean noDamageInspectionPerformed;
+    public Boolean noDamageInspectionPerformed;
     public TotalPrepaidAmount totalPrepaidAmount;
     public Object warrantyClaimNumbers;
     public Object migrationExtra;
@@ -734,17 +734,17 @@ public class MongoRepairOrder {
     public String cpStatus;
     public String ipStatus;
     public String wpStatus;
-    public int version;
-    public int calculcationVersion;
+    public Integer version;
+    public Integer calculcationVersion;
     public ArrayList<Fee> fees;
     public ArrayList<Object> applicableVehicleGroupIds;
-    public int priority;
-    public int calculatedPriority;
-    public boolean priorityOverridden;
+    public Integer priority;
+    public Integer calculatedPriority;
+    public Boolean priorityOverridden;
     public Object firstClosedTime;
     public Object firstClosedBy;
     public Object roCloseData;
-    public boolean roClosedForFirstTime;
+    public Boolean roClosedForFirstTime;
     public String cashieringStatus;
     public Object listViewFieldsLastModifiedTime;
     public Object deferRecallDetails;
@@ -759,7 +759,7 @@ public class MongoRepairOrder {
     public Object obdCheckinId;
     public Object externalIntegrationInfos;
     public Object migratedEntityId;
-    public boolean preRO;
-    public boolean activeJobClockInPresent;
+    public Boolean preRO;
+    public Boolean activeJobClockInPresent;
     public Object userPhone;
 }
